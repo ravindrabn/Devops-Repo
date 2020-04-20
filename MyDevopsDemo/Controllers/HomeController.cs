@@ -15,6 +15,7 @@ namespace MyDevopsDemo.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
+            var x = "This is test string";
             _logger = logger;
         }
 
