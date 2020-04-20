@@ -17,6 +17,7 @@ namespace MyDevopsDemo.Controllers
         {
             var x = "This is test string";
             _logger = logger;
+            var y = "This is after logging";
         }
 
         public IActionResult Index()
