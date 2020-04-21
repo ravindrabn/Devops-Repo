@@ -28,6 +28,11 @@ namespace MyDevopsDemo.Controllers
             return View();
         }
 
+        public string HelloWorld(string message)
+        {
+            return "Hello world from the Home Controller : " + message;
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
