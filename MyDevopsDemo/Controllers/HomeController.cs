@@ -33,6 +33,11 @@ namespace MyDevopsDemo.Controllers
             return "Hello world from the Home Controller : " + message;
         }
 
+        public string HelloWorldNewMethod(string message)
+        {
+            return "Hello world from the Home Controller : " + message;
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
