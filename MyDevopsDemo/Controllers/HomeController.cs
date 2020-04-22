@@ -35,6 +35,7 @@ namespace MyDevopsDemo.Controllers
 
         public string HelloWorldNewMethod(string message)
         {
+            var x = "THis is change in the feature branch";
             return "Hello world from the Home Controller : " + message;
         }
 
