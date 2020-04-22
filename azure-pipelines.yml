@@ -22,6 +22,12 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: GitHubComment@0
+  inputs:
+    gitHubConnection: 'DevopsDemoNew'
+    repositoryName: '"Devops-Repo"'
+    id: 'ravindrabn@outlook.com'
+
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
