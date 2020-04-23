@@ -38,6 +38,8 @@ namespace MyDevopsDemo.Controllers
         public string HelloWorldNewMethod(string message)
         {
             var x = "THis is change in the feature branch";
+            var y = "Again added one more variable";
+            var z = "This is 3rd statement";
             return "Hello world from the Home Controller : " + message;
         }
 
