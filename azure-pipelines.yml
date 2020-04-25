@@ -1,6 +1,7 @@
 # ASP.NET
 
 
+
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
@@ -54,18 +55,31 @@ steps:
 #     ArtifactName: 'Build Artifacts'
 #     publishLocation: 'Container'
 
+# - task: AzureRmWebAppDeployment@4
+#   inputs:
+#     ConnectionType: 'AzureRM'
+#     azureSubscription: 'DevopsDemoNew - Azure'
+#     appType: 'webApp'
+#     WebAppName: 'DevopsDemoNew'
+#     deployToSlotOrASE: true
+#     ResourceGroupName: 'DevopsDemoNew-rg'
+#     SlotName: 'production'
+#     packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+#     enableCustomDeployment: true
+#     DeploymentType: 'webDeploy'
+
+
+    
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'DevopsDemoNew - Azure'
+    azureSubscription: 'Free Trial(d61e96eb-fa3f-4244-81eb-e504312cf9d6)'
     appType: 'webApp'
-    WebAppName: 'DevopsDemoNew'
+    WebAppName: 'demoappdep'
     deployToSlotOrASE: true
-    ResourceGroupName: 'DevopsDemoNew-rg'
+    ResourceGroupName: 'DemoDeploymentWinRG'
     SlotName: 'production'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     enableCustomDeployment: true
     DeploymentType: 'webDeploy'
-
-
-    
+    RemoveAdditionalFilesFlag: true
