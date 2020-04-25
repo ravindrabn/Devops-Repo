@@ -14,7 +14,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  artifactStagingDirectory:'@C:\Build dlls'
+  artifactStagingDirectory: 'C:\Build dlls'
 
 steps:
 
