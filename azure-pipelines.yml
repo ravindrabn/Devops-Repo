@@ -14,7 +14,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  ArtifactStagingDirectory:'C:\Build dlls'
+  artifactStagingDirectory:'@C:\Build dlls'
 
 steps:
 
@@ -45,6 +45,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.artifactStagingDirectory)'
     ArtifactName: 'Build Artifacts'
     publishLocation: 'Container'
