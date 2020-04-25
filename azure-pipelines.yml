@@ -48,8 +48,8 @@ steps:
     codeCoverageTool: 'Cobertura'
     summaryFileLocation: 'CoberturaResults'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(artifactStagingDirectory)'
-    ArtifactName: 'Build Artifacts'
-    publishLocation: 'Container'
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: '$(artifactStagingDirectory)'
+#     ArtifactName: 'Build Artifacts'
+#     publishLocation: 'Container'
