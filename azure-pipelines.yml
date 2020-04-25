@@ -63,6 +63,9 @@ steps:
     deployToSlotOrASE: true
     ResourceGroupName: 'DevopsDemoNew-rg'
     SlotName: 'production'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     enableCustomDeployment: true
     DeploymentType: 'webDeploy'
+
+
+    
